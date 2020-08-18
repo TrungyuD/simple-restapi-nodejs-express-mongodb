@@ -6,10 +6,10 @@ const app = express();
 
 app.use(express.json());
 app.use('/api/tasks', tasksRoutes);
-// mongodb: p0MUX3QEXdxWGL1F
+// mongodb: <password>
 //db : mongodb+srv://duy:<password>@cluster0.48qgk.mongodb.net/<dbname>?retryWrites=true&w=majority
 mongoose.connect(
-    'mongodb+srv://duy:p0MUX3QEXdxWGL1F@cluster0.48qgk.mongodb.net/tasks',
+    'mongodb+srv://duy:<password>@cluster0.48qgk.mongodb.net/tasks',
     {
         useNewUrlParser:true,
         useUnifiedTopology:true,
